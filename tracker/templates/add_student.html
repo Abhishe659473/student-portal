@@ -1,0 +1,10 @@
+<h1>Add Student</h1>
+<form method="POST">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Name" required><br>
+    <input type="text" name="roll_no" placeholder="Roll No" required><br>
+    <input type="text" name="class_name" placeholder="Class" required><br>
+    <input type="text" name="section" placeholder="Section"><br><br>
+    <button type="submit">Save</button>
+</form>
+<a href="{% url 'student_list' %}">Back</a>
