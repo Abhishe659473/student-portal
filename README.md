@@ -1,92 +1,75 @@
-Student Portal – Attendance & Marks Tracker
+🎓 Student Portal – Django Web Application
 
-A Django-based web application that helps institutions manage students, track attendance, and record subject-wise marks with automated performance summaries.
+A simple yet functional web app to manage student information, record attendance, and track subject-wise marks with clear performance summaries.
 
-📌 Features
+🚀 Features
 
-✔ Add, list, and manage students
-✔ Record daily attendance per subject (Present/Absent)
-✔ Store marks for multiple exams per subject
-✔ Performance dashboard for every student
-✔ Attendance % and average marks calculated automatically
-✔ Simple and clean Bootstrap UI
-✔ Admin panel to manage Subjects & Exams
+✔ Add Student with roll number, class, and section
+✔ Student list with clickable details
+✔ Individual student dashboard
+✔ Record subject-wise attendance
+✔ Record subject-wise marks
+✔ View all submissions instantly
+✔ Organized SQLite database backend
+✔ Clean UI with simple navigation
 
-🛠 Tech Stack
-Layer	Technology
-Backend	Python, Django
-Database	SQLite
-Frontend	Django Templates (HTML + Bootstrap)
-Hosting (planned)	Render / PythonAnywhere
-🎯 Data Model Overview
-Model	Purpose
-Student	Basic student details
-Subject	Academic subjects
-Exam	Exam names + dates
-Attendance	Student + Subject + Date + Status
-Mark	Student + Subject + Exam + Marks
+🛠️ Tech Stack
+Component	Technology
+Frontend	HTML, CSS (Django Templates)
+Backend	Django (Python)
+Database	SQLite3
+Version Control	Git & GitHub
+📷 UI Screenshots
 
-Relational design enables subject-wise summaries for each student.
+Located inside /screenshots/ folder in repository
 
-🚀 How to Run Locally
-1️⃣ Clone the repository
+Page	Screenshot
+Student List	student_list.png
+Student Detail	student_detail.png
+Add Attendance	add_attendance.png
+Add Marks	add_marks.png
+🏗️ Installation & Setup
+# Clone the repo
 git clone https://github.com/Abhishe659473/student-portal.git
+
 cd student-portal
 
-2️⃣ Install dependencies
-pip install -r requirements.txt
+# Install dependencies
+pip install django
 
-3️⃣ Apply migrations
+# Run migrations (if needed)
 python manage.py migrate
 
-4️⃣ Run the server
+# Start the server
 python manage.py runserver
 
 
-Open in browser:
+Visit in browser:
+➡ http://127.0.0.1:8000/
 
-http://127.0.0.1:8000/
+🔮 Future Improvements
 
-🔐 Admin Panel Setup
+Add authentication (Admin login)
 
-Create a superuser:
+Export reports (PDF/Excel)
 
-python manage.py createsuperuser
+UI improvements with Bootstrap or Tailwind
 
+Attendance/marks analytics & charts
 
-Login:
+Search & filter options
 
-http://127.0.0.1:8000/admin/
-
-Add base subjects and exams before adding attendance/marks.
-
-📸 Screenshots
-Page	Preview
-Student List	(screenshot here)
-Student Detail	(screenshot here)
-Add Attendance	(screenshot here)
-Add Marks	(screenshot here)
-
-Screenshots will be added soon.
-
-📈 Future Enhancements
-
-Authentication & role-based access
-
-Export reports as PDF/Excel
-
-Dashboard with charts for marks trends
-
-Pagination & search filters
-
-Deployment with CI/CD
-
-👨‍💻 Developer
+👤 Author
 
 Bagatha Abhishek
-Python & Backend Development Enthusiast
-Hyderabad, India
+B.Tech – Information Technology
+4th Year, 8th Semester
+India 🇮🇳
 
-📎 Repository Link
+📌 GitHub: https://github.com/Abhishe659473
 
-🔗 https://github.com/Abhishe659473/student-portal
+📚 License
+
+This project is licensed under the MIT License – free to use and modify.
+
+👍 If you like this project — drop a ⭐ on GitHub!
